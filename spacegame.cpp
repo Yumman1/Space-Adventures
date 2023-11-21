@@ -54,7 +54,6 @@ int main(int argc, char* argv[]) {
         return 1;
     }
 
-
     int bgY = 0;
 
     bool quit = false;
@@ -81,10 +80,6 @@ int main(int argc, char* argv[]) {
                 }
             }
         }
-        
-        // Inside your main game loop:
-
-        // Get the rectangles representing the spaceship, obstacle, and asteroid
 
         spaceship.update();
 
