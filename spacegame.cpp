@@ -85,30 +85,6 @@ int main(int argc, char* argv[]) {
         // Inside your main game loop:
 
         // Get the rectangles representing the spaceship, obstacle, and asteroid
-        SDL_Rect spaceshipRect = spaceship.getCollider();
-        SDL_Rect obstacleRect = obstacle.getCollider();
-        SDL_Rect asteroidRect = asteroid.getCollider();
-
-        // Check for collision between spaceship and obstacle
-        if (checkCollision(spaceshipRect, obstacleRect)) {
-            // Collision with obstacle detected! Handle it here.
-            std::cout << "Collision with obstacle detected!" << std::endl;
-            // Perform actions like reducing health, ending the game, etc.
-            quit = true; // For example, you could end the game on collision
-        }
-
-        // Check for collision between spaceship and asteroid
-        if (checkCollision(spaceshipRect, asteroidRect)) {
-            // Collision with asteroid detected! Handle it here.
-            std::cout << "Collision with asteroid detected!" << std::endl;
-            // Perform actions like reducing health, ending the game, etc.
-            quit = true; // For example, you could end the game on collision
-        }
-
-
-
-
-
 
         spaceship.update();
 
